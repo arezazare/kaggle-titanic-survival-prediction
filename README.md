@@ -55,6 +55,12 @@ This project analyzes the Titanic dataset from Kaggle to predict passenger survi
 3. Run all cells step-by-step  
 4. Optionally generate a new submission file
 
+## 👏 Author
+**Reza** — Full ML pipeline implemented from scratch.
+
 ## 📎 Resources
 - [Kaggle Titanic Competition](https://www.kaggle.com/c/titanic)
 - [Titanic Data Dictionary](https://www.kaggle.com/code/sashankpillai/titanic-data-dictionary)
+
+## 📎 Credits
+Dataset sourced from [Kaggle](https://www.kaggle.com/) for educational and research purposes. All rights to the original dataset belong to the respective uploader
