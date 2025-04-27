@@ -1,18 +1,31 @@
-# Titanic Survival Prediction – Kaggle Dataset
+# Titanic Survival Prediction – Kaggle Competition
 
 ## 🚢 Overview
-This project analyzes the Titanic dataset from Kaggle to predict passenger survival based on various features such as age, gender, ticket class, and family relationships. The goal is to build a machine learning model that accurately classifies whether a passenger survived or not.
+This project tackles the classic Titanic survival classification challenge hosted on Kaggle.
+The goal is to predict whether a passenger survived based on features like age, sex, fare, class, and family information.
+
+A full machine learning pipeline was implemented:
+- ✅ Data cleaning, feature engineering, and preprocessing
+- ✅ Training with multiple models and hyperparameter tuning (GridSearchCV)
+- ✅ 5-Fold Cross-validation and final model deployment
+- 🎯 Final Kaggle Score: 0.77033 accuracy
 
 ## 📊 Dataset
-- Source: [Kaggle Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)
-- Rows: 891 (training set), 418 (test set)
+- Source: Kaggle Titanic Dataset
+- Training Set: 891 rows × 12 columns
+- Test Set: 418 rows × 11 columns
 - Features: Name, Age, Sex, Pclass, SibSp, Parch, Fare, Embarked, Cabin, Ticket
+- Target: Survived (0 = did not survive, 1 = survived)
 
-## 🛠️ Technologies & Tools
-- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-- Jupyter Notebook
-- Git / GitHub
-- Optional: XGBoost, LightGBM, Hyperparameter Tuning
+## 🧪 Key Tasks
+- Data exploration and missing value analysis
+- Feature engineering: extracting titles, family size, simplified deck, fare bands, child flag
+- Handling categorical variables via One-Hot Encoding
+- Feature scaling with MinMaxScaler
+- Training and evaluating multiple models
+- Hyperparameter tuning with GridSearchCV
+- Model validation with 5-Fold Cross-Validation
+- Preparing final Kaggle submission
 
 ## 🔍 Key Steps
 1. **Data Cleaning:**
@@ -38,23 +51,20 @@ This project analyzes the Titanic dataset from Kaggle to predict passenger survi
 5. **Submission:**
    - Prepared CSV file for Kaggle submission format: `PassengerId, Survived`
 
-## ✅ Results
-- Best Model: Random Forest Classifier
-- Accuracy: ~82% on validation set
-- Feature Importance: Sex, Fare, Pclass, Title
+## 🔧 Technologies Used
+- Python (NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, XGBoost, LightGBM)
+- Jupyter Notebook
+- Kaggle Kernels & APIs
+- Git & GitHub
+- Joblib (for saving final model and scaler)
 
-## 📁 Files
-- `titanic_analysis.ipynb` – EDA and preprocessing
-- `titanic_modeling.ipynb` – Model training and evaluation
-- `submission.csv` – Final prediction file
-- `plots/` – Folder containing key EDA and feature importance visualizations
-
-## 🚀 How to Run
-1. Clone the repository  
-2. Open `titanic_modeling.ipynb` in Jupyter Notebook  
-3. Run all cells step-by-step  
-4. Optionally generate a new submission file
-
+## 🧠 What I Learned
+- How careful feature engineering can drive model performance
+- The importance of cross-validation for small datasets
+- How to tune hyperparameters systematically using GridSearchCV
+- Full machine learning pipeline from raw data to Kaggle submission
+- Deploying trained models and scalers for reproducibility
+- 
 ## 👏 Author
 **Reza** — Full ML pipeline implemented from scratch.
 
